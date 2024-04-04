@@ -25,6 +25,7 @@ jobs:
       run: go version
     - name: install dependencies
       run: | 
+       go module init
        go install .
        go install example.com/octo-examplemodule
        go install example.com/octo-examplemodule@v1.3.4
