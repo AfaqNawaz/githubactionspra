@@ -25,9 +25,9 @@ jobs:
       run: go version
     - name: install dependencies
       run: | 
-       go get .
-       go get example.com/octo-examplemodule
-       go get example.com/octo-examplemodule@v1.3.4
+       go install .
+       go install example.com/octo-examplemodule
+       go install example.com/octo-examplemodule@v1.3.4
     - name: Build
       run: go build -v ./...
     - name: Test with the Go CLI
